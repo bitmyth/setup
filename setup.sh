@@ -9,6 +9,10 @@ set cindent
 set incsearch
 EOF
 
+cat >> ~/.tmux.conf <<EOF
+set -g prefix C-a
+EOF
+
 # set default editor to vim
 echo 'export EDITOR=vim' >>/etc/profile
 
